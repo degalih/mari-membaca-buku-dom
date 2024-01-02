@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  max-width: 100%;
+  height: auto;
+  background-color: #064420;
+  color: #fdfaf6;
+}
+
+nav,
+h2 {
+  padding: 5px 0;
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 15px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.desktop-hero {
+  display: none;
+}
+
+.hero-text {
+  margin: 0 30px;
+  border-bottom: 5px solid #064420;
+}
+
+.hero-text h2 {
+  color: #064420;
+  font-weight: 800;
+}
+
+.form {
+  margin: 40px 25px;
+  padding: 25px 30px;
+  background-color: #fdfaf6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.form input {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.btn__submit,
+.btn__search {
+  margin-top: 10px;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  color: #064420;
+  background-color: #fdfaf6;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn__submit:hover {
+  background-color: #064420;
+  color: #fdfaf6;
+}
+
+input {
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid #fdfaf6;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  padding-left: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #064420;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #064420;
+}
+
+.input_inline {
+  margin: 15px 0;
+}
+
+.input_inline input {
+  display: inline;
+  max-width: 16px;
+  max-height: 16px;
+  margin: 0;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+.input_inline label {
+  vertical-align: middle;
+}
+
+button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.section-title h2 {
+  color: #064420;
+}
+
+.item {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.item > .inner h2 {
+  margin-bottom: unset;
+}
+
+.item > .inner p {
+  margin-top: 5px;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+/* Tabel */
+tr:nth-child(even) {
+  background-color: #fdfaf6;
+}
+
+tr:nth-child(odd) {
+  background-color: #ceccc8;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+
+.table__header th {
+  font-size: 18px;
+  background-color: #064420;
+  color: #fdfaf6;
+  padding: 10px;
+  border: 2px solid #94928f;
+}
+
+.table__data td {
+  padding: 10px 0;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #94928f;
+}
+
+.table__data > .button {
+  padding: 10px;
+}
+
+.btn {
+  min-width: 44px;
+  min-height: 44px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* Btn */
+.btn__check {
+  background: url(../icons/check.svg);
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.btn__undo {
+  background: url(../icons/undo.svg);
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.btn__delete {
+  background: url(../icons/trash.svg);
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.btn__check:hover {
+  background-color: #b1e6b1;
+}
+.btn__delete:hover {
+  background-color: #f7b2ad;
+}
+.btn__undo:hover {
+  background-color: #aaeff8;
+}
+
+footer {
+  background-color: #064420;
+  height: 100px;
+  padding: 0.1px 0;
+}
+
+footer > .container > .section-title h2 {
+  color: #fdfaf6;
+}

@@ -1,0 +1,66 @@
+@media screen and (min-width: 600px) {
+  header {
+    margin: 0;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav > .container {
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 40px auto;
+  }
+  .mobile-hero {
+    display: none;
+  }
+  .desktop-hero {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .table__header {
+    display: none;
+  }
+
+  .table__data td,
+  .table__data tr {
+    display: block;
+    width: 100%;
+    background-color: #fdfaf6;
+  }
+
+  .table__data tr {
+    margin-bottom: 15px;
+  }
+
+  .table__data td {
+    text-align: right;
+    padding-right: 15px;
+    vertical-align: middle;
+  }
+
+  .table__data tr td {
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .table__data td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 600;
+    text-align: left;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mari membaca buku adalah bookshelf app" />
+    <title>Mari Membaca Buku</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h2>MARI MEMBACA BUKU</h2>
+        </div>
+      </nav>
+      <div class="hero">
+        <img class="mobile-hero" src="./assets/img/mobile-hero.svg" alt="mobile-hero" />
+        <img class="desktop-hero" src="./assets/img/desktop-hero.svg" alt="desktop-hero" />
+        <div class="hero-text"><h2>MARI MEMBACA BUKU</h2></div>
+      </div>
+    </header>
+    <main>
+      <div class="input-buku">
+        <div class="form container">
+          <div class="section-title">
+            <h2>Masukkan Buku Baru</h2>
+          </div>
+
+          <form autocomplete="off" id="form">
+            <div class="input">
+              <label for="inputJudulBuku">Judul</label>
+              <input placeholder="Masukkan Judul Buku" type="text" id="judul" required />
+            </div>
+
+            <div class="input">
+              <label for="inputPenulisBuku">Penulis</label>
+              <input placeholder="Masukkan Nama Penulis" type="text" id="penulis" required />
+            </div>
+
+            <div class="input">
+              <label for="inputTahunBuku">Tahun</label>
+              <input placeholder="Masukkan Tahun Rilis Buku" type="number" id="tahun" required />
+            </div>
+
+            <div class="input_inline">
+              <input type="checkbox" id="isCompleted" />
+              <label for="inputBukuSelesai">Selesai Membaca</label>
+            </div>
+
+            <button class="btn__submit" id="submit" type="submit">Tambahkan Buku</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="belum-selesai">
+        <div class="form container">
+          <div class="section-title">
+            <h2>Belum Selesai Dibaca</h2>
+          </div>
+
+          <div class="daftar-buku">
+            <div class="container">
+              <table id="table" class="table">
+                <thead>
+                  <tr class="table__header">
+                    <th>Judul</th>
+                    <th>Penulis</th>
+                    <th>Tahun</th>
+                    <th>Opsi</th>
+                  </tr>
+                </thead>
+
+                <tbody id="uncompleted"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selesai-dibaca">
+        <div class="form container">
+          <div class="section-title">
+            <h2>Selesai Dibaca</h2>
+          </div>
+
+          <div class="daftar-buku">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr class="table__header">
+                    <th>Penulis</th>
+                    <th>Judul</th>
+                    <th>Tahun</th>
+                    <th>Opsi</th>
+                  </tr>
+                </thead>
+
+                <tbody id="completed"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="section-title">
+            <h2>© Degalabs - Mari Membaca Buku 2021</h2>
+          </div>
+        </div>
+      </footer>
+
+      <script src="./assets/js/data.js"></script>
+      <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/clear.js"></script>
+    </main>
+  </body>
+</html>
